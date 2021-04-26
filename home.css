@@ -1,7 +1,12 @@
+p{
+    margin: 0px;
+}
 body{
     background-color: #E5E5E5;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 header{
@@ -28,7 +33,6 @@ header img{
 
 .top-navbar a{
     text-decoration: none;
-    font-size: 14px;
     color: #545454;
     margin-left: 24px;
     margin-right: 24px;
@@ -65,20 +69,16 @@ main{
 
 .post .data-hora{
     font-size: 12px;
-    font-weight: 400;
     color: #929292;
     margin: 8px 0px 14px 24px;
 }
 
 .post .texto-post{
-    font-size: 14px;
-    font-weight: 400;
     color: #545454;
     margin: 24px;
 }
 
 button{
-    font-size: 14px;
     color:#545454;
     background-color: white;
     border-radius: 20px;
@@ -95,9 +95,38 @@ aside{
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    padding: 20px;
     
 }
 
 aside input{
-    
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    color: #545454;
+    padding: 17px 0px 16px 20px;
+}
+
+aside h1{
+    border-left: #FE0078 2px solid;
+    padding-left: 11px;
+}
+
+.categorias a{
+    display: flex;
+    justify-content: space-between;
+    color: #545454;
+    text-decoration: none;
+    border-bottom: #EEEEEE dotted;
+    padding: 16px 18px 16px 13px;
+}
+
+.publicidade p{
+    font-size: 36px;
+    color: #545454;
+    text-align: center;
+    background-color: #EEEEEE;
+    height: 144px;
+    width: 340px;
+    margin: 32px 0px;
+    padding-top: 96px;
 }
