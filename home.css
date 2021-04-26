@@ -82,11 +82,17 @@ button{
     color:#545454;
     background-color: white;
     border-radius: 20px;
-    border-color: #FE0078;
+    border: 1px solid #FE0078;
     max-width: 154px;
     max-height: 43px;
     margin: 0px 24px 24px auto;
     padding: 12px 24px;
+}
+
+button:hover{
+    background-color: #FE0078;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 aside{
@@ -107,6 +113,12 @@ aside input{
     padding: 17px 0px 16px 20px;
 }
 
+aside input:hover{
+    outline: none;
+    border-color:#FE0078;
+    cursor: pointer;
+}
+
 aside h1{
     border-left: #FE0078 2px solid;
     padding-left: 11px;
@@ -120,6 +132,11 @@ aside h1{
     text-decoration: none;
     border-bottom: #EEEEEE dotted;
     padding: 16px 18px 16px 13px;
+}
+
+.categorias a:hover{
+    color: #FE0078;
+    border-bottom: #FE0078 dotted;
 }
 
 .publicidade p{
