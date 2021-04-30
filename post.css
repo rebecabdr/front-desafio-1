@@ -78,26 +78,84 @@ main{
 }
 
 .post .texto-post{
-    color: #545454;
+    color: #000000;
     margin: 24px;
 }
 
-button{
-    
-    background-color: white;
-    border-radius: 20px;
-    border: 1px solid #FE0078;
-    max-width: 154px;
-    max-height: 43px;
-    margin: 0px 24px 24px auto;
-    padding: 12px 24px;
+.formulario{
+    display: grid;
+    grid-template-areas: "nome email"
+                        "form-nome form-email"
+                        "comentario vazio1"
+                        "form-comentario form-comentario"
+                        "vazio2 botao";
+    column-gap:24px;
+    max-width: 732px;
 }
 
+.label-nome{
+    grid-area: nome;
+    padding-bottom: 8px;
+}
 
-button:hover{
-    background-color: #FE0078;
-    color: #ffffff;
+.nome{
+    grid-area: form-nome;
+    width: 346px;
+    height: 36px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+}
+
+.nome:hover{
+    outline: none;
+    border-color:#FE0078;
     cursor: pointer;
+}
+
+.label-email{
+    grid-area: email;
+    padding-bottom: 8px;
+}
+
+.email{
+    grid-area: form-email;
+    width: 346px;
+    height: 36px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+}
+
+.label-comentario{
+    grid-area: comentario;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.comentario{
+    grid-area: form-comentario;
+    width: 724px;
+    height: 170px;
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+}
+
+.comentario:hover{
+    outline: none;
+    border-color:#FE0078;
+    cursor: pointer;
+}
+
+.formulario .botao{
+    grid-area: botao;
+    margin-left: auto;
+    margin-top:48px;
+    width: 118px;
+    height: 43px;
+    background-color:#FE0078;
+    border: 0px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 700;
 }
 
 aside{
